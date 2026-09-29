@@ -1,0 +1,32 @@
+SIMULATED ANDROID-STYLE LOGS
+WIPRO AUTOMOTIVE CLASSES - MODULE 6
+IVI: IN-VEHICLE INFOTAINMENT SYSTEMS
+
+PROJECT: SIMULATION OF MESSAGE FLOW BETWEEN MEDIA SERVICE AND AUDIO HAL
+
+
+PLAY COMMAND
+User Input: PLAY
+Media UI -> Media Service: PLAY_REQUEST
+Media Service -> Audio Framework: START_AUDIO
+Audio Framework -> Audio HAL: OPEN_OUTPUT
+Audio HAL -> Audio Hardware: AUDIO_PLAYING
+
+
+PAUSE COMMAND
+User Input: PAUSE
+Media UI -> Media Service: PAUSE_REQUEST
+Media Service -> Audio Framework: PAUSE_AUDIO
+Audio Framework -> Audio HAL: PAUSE_OUTPUT
+Audio HAL -> Audio Hardware: AUDIO_PAUSED
+
+
+RESUME COMMAND
+User Input: RESUME
+Media UI -> Media Service: RESUME_REQUEST
+Media Service -> Audio Framework: RESUME_AUDIO
+Audio Framework -> Audio HAL: RESUME_OUTPUT
+Audio HAL -> Audio Hardware: AUDIO_PLAYING
+
+
+These are simulated Android-style logs created for academic demonstration. They were not captured from a real Android Automotive system.
